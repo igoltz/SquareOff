@@ -9,13 +9,16 @@ if (so_env === 'dev') {
     listen_port = connect_port = 8080;
 }
 else if (so_env === 'prod' ) {
-    host = 'sqoff.com';
-    listen_port = 8080;
-    connect_port = 80;
+    host = 'localhost';
+    listen_port = connect_port = 8080;
 }
 
 const config = {
     HOST: host,
+    /* HOST is used in
+       server/server.js for CORS header
+       client/src/states/Mainmenu.js for connectUrl/socket but this commit does remove usage there
+    */
     CONNECT_PORT: connect_port,
     LISTEN_PORT: listen_port,
     CANVAS: {

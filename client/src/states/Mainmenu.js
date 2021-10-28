@@ -46,7 +46,8 @@ class MainmenuState extends Phaser.State {
         });
 
         const connectUrl = `http://${config.HOST}:${config.CONNECT_PORT}`;
-        this.socket = io(connectUrl);
+        // this.socket = io(connectUrl);
+        this.socket = io();
 
         this.socket.on('connect', () => {
             console.log("WebSocket connection established and ready.");
