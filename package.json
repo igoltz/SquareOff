@@ -13,9 +13,9 @@
     "url": "git@github.com:ScriptaGames/SquareOff.git"
   },
   "dependencies": {
-    "console-stamp": "^0.2.9",
+    "console-stamp": "^0.2.10",
     "express": "^4.17.1",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "lodash.template": "^4.5.0",
     "node-gameloop": "^0.1.4",
     "node-uuid": "^1.4.8",
