@@ -47,7 +47,7 @@ const config = {
         MOVE_DELAY: 750, // delay before moving; in ms
     },
     TICK_FAST_INTERVAL: 50,
-    WINNING_SCORE: 7,
+    WINNING_SCORE: 3,
     WIN_SCREEN_TIMEOUT: 7000,  // time that the player stays on the win/loss scree before starting new game
     MAX_PLACED_BLOCKS: 3,
     MAX_INACTIVE_TIME: 45000,
