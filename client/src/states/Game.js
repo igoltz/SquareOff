@@ -67,7 +67,7 @@ class GameState extends Phaser.State {
             console.log('Victory!');
 
             // display message box
-            self.displayEndMessage('VICTORY!');
+            self.displayEndMessage('Gewonnen!');
 
             //TODO: stay in same game if playing a friend
 
@@ -77,7 +77,7 @@ class GameState extends Phaser.State {
             console.log('Defeat :(');
 
             // display message box
-            self.displayEndMessage('DEFEAT!');
+            self.displayEndMessage('Verloren!');
 
             //TODO: stay in same game if playing a friend
 
