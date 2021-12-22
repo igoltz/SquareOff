@@ -105,12 +105,14 @@ input, button {
     z-index: 40;
 }
 
+/* goethe color */
 .color-picker .pink   { background-color: #82055f; }
 .color-picker .red    { background-color: #502300; }
 .color-picker .orange { background-color: #eb6400; }
 .color-picker .green  { background-color: #374105; }
 .color-picker .blue   { background-color: #5ac8f5; }
 .color-picker .teal   { background-color: #003969; }
+
 /*
 .color-picker .pink   { background-color: #D70060; }
 .color-picker .red    { background-color: #E5282E; }
