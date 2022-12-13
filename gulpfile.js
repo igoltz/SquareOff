@@ -3,7 +3,6 @@ const del = require('del');
 const gulp = require('gulp');
 const path = require('path');
 const argv = require('yargs').argv;
-const gutil = require('gulp-util');
 const source = require('vinyl-source-stream');
 const buffer = require('gulp-buffer');
 const gulpif = require('gulp-if');
@@ -41,9 +40,9 @@ function isProduction() {
 function logBuildMode() {
 
     if (isProduction()) {
-        gutil.log(gutil.colors.green('Running production build...'));
+        console.log('Running production build...');
     } else {
-        gutil.log(gutil.colors.yellow('Running development build...'));
+        console.log('Running development build...');
     }
 
 }
@@ -121,7 +120,7 @@ async function build() {
     })
         .transform(babelify)
         .bundle().on('error', function (error) {
-            gutil.log(gutil.colors.red('[Build Error]', error.message));
+            console.error('[Build Error]', error.message);
             this.emit('end');
         })
         .pipe(gulpif(!isProduction(), exorcist(sourcemapPath)))
