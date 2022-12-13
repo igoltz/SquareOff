@@ -8,9 +8,13 @@ Also see the [making of](http://scripta.co/articles/squareoff-ld35/) blog post.
 
     npm install
 
-## Hacking
+## Build
+
+    npm run build
+
+## Enjoy
 
     npm start
 
 
-Then to test open two browser windows and go to http://localhost:3000 in both
+Then to test open two browser windows and go to http://localhost:8080 in both
