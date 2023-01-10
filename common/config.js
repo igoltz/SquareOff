@@ -49,6 +49,7 @@ const config = {
     TICK_FAST_INTERVAL: 50,
     WINNING_SCORE: 7,
     //WINNING_SCORE: process.env.WINNING_SCORE || 5,
+    // set env in deployment!
     WIN_SCREEN_TIMEOUT: 7000,  // time that the player stays on the win/loss scree before starting new game
     MAX_PLACED_BLOCKS: 3,
     MAX_INACTIVE_TIME: 45000,
