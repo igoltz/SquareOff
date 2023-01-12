@@ -47,8 +47,8 @@ const config = {
         MOVE_DELAY: 750, // delay before moving; in ms
     },
     TICK_FAST_INTERVAL: 50,
-    //WINNING_SCORE: 7,
-    WINNING_SCORE: process.env.WINNING_SCORE || 5,
+    WINNING_SCORE: 7,
+    //WINNING_SCORE: process.env.WINNING_SCORE || 5,
     // set env in deployment!
     WIN_SCREEN_TIMEOUT: 7000,  // time that the player stays on the win/loss scree before starting new game
     MAX_PLACED_BLOCKS: 3,
